@@ -1,5 +1,13 @@
 # CodeT5: Identifier-aware Unified Pre-trained Encoder-Decoder Models for Code Understanding and Generation
 
+## Forked version with CONALA dataset support
+
+Finetuned the pretrained CodeT5-base model on Conala training data with about 2400 training pairs. On Conala test, we have 37-38 BLEU score and 9.8% exact match! This is higher than previous baselines.
+
+To use it, just perform the finetuning step with `--task conala`
+
+## Original Readme
+
 This is the official PyTorch implementation for the following EMNLP 2021 paper from Salesforce Research:
 
 **Title**: [CodeT5: Identifier-aware Unified Pre-trained Encoder-Decoder Models for Code Understanding and Generation](https://arxiv.org/pdf/2109.00859.pdf)
